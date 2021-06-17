@@ -12,12 +12,28 @@
       <div class="pl-10 font-extrabold font-sans">
         <a href="#" class="text-lg">RR.D</a>
       </div>
-      <div class="pr-10 text-sm" id="home">
+      <div class="pr-10 text-sm hidden lg:block" id="home">
         <a href="#" class="ml-2 hover:text-indigo-600">Home</a>
         <a href="#" class="ml-2 hover:text-indigo-600">About</a>
         <a href="#" class="ml-2 hover:text-indigo-600">Designs</a>
         <a href="#" class="ml-2 hover:text-indigo-600">Contact</a>
       </div>
+      <div class="px-4 cursor-pointer lg:hidden pr-10" id="burger">
+              <svg
+                class="w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </div>
     </div>
 
     <div class="lg:flex">
@@ -87,7 +103,7 @@
             <br />
             <div class="float-right w-1/6 h-1 bg-indigo-500"></div>
             <br />
-            <h1 class="font-bold uppercase text-2xl w-60 mx-auto bg-indigo-500 rounded-md text-center text-gray-100 mt-3">RR Designs</h1>
+            <h1 class="font-bold uppercase text-3xl w-60 mx-auto bg-indigo-500 rounded-md text-center text-gray-100 mt-3">RR Designs</h1>
             <p class="ml-3 mt-6 text-center">Designs are currently in progress..</p>
             <p class="text-sm font-light ml-3 mb-3 text-center">Web Design / Graphic Design</p>
             <div class="mt-3 float-left w-2/6 h-1 bg-indigo-500"></div>
@@ -101,7 +117,7 @@
               <div class="float-right w-2 h-1 bg-indigo-500 ml-1"></div>
               <div class="float-right w-1 h-1 bg-indigo-500"></div><br>
             <div class="float-right w-4 h-1 bg-indigo-500 ml-1 -mt-3"></div>
-          <h1 class="bg-indigo-500 text-gray-100 text-xl w-52 uppercase font-bold text-center mx-auto rounded-md mb-3">About Me</h1>
+          <h1 class="bg-indigo-500 text-gray-100 text-xl w-52 uppercase font-bold text-center mx-auto lg:ml-0 rounded-md mb-3">About Me</h1>
           <p class="p-5 mx-auto text-justify text-sm border border-black rounded-md">
             My name is Rhodrick Cunanan and I'm currently living in Batangas
             City, Philippines. I am an aspiring Web Designer/Graphic Designer. I
@@ -123,16 +139,16 @@
           <div class="w-full text-center">
           <a href="https://www.behance.net/rhodrickcunanan" target="_blank" class="bg-black text-gray-100 py-1 px-2 rounded-md hover:bg-gray-900">behance.net</a>
           </div>
-          <div class="mt-5 border border-black p-5 rounded-md">
-            <div class="grid grid-flow-row grid-cols-3 gap-4">
-              <img src="./img/dpmenew.jpg" class="w-6/6 rounded-md shadow-md">
-              <img src="./img/koonslogo.png" class="w-6/6 rounded-md shadow-md">
-              <img src="./img/logo1.png" class="w-6/6 rounded-md shadow-md">
-              <img src="./img/batch2020.jpg" class="w-6/6 rounded-md shadow-md">
-              <img src="./img/batch2020cover.jpg" class="w-6/6 rounded-md shadow-md">
-              <img src="./img/pizza menu.png" class="w-6/6 rounded-md shadow-md">
-              <img src="./img/ubsgcover1.jpg" class="w-6/6 col-span-3 rounded-md shadow-md">
-              <img src="./img/omen-banner.png" class="w-6/6 col-span-3 rounded-md shadow-md">
+          <div class="mt-5 sm:w-5/6 border border-black p-5 rounded-md mx-auto shadow-lg">
+            <div class="grid grid-flow-row grid-rows-1 md:grid-cols-3 gap-4">
+              <img src="./img/dpmenew.jpg" class="sm:w-4/6 md:w-5/6 mx-auto rounded-md shadow-md">
+              <img src="./img/koonslogo.png" class="sm:w-4/6 md:w-5/6 mx-auto rounded-md shadow-md">
+              <img src="./img/logo1.png" class="sm:w-4/6 md:w-5/6 mx-auto rounded-md shadow-md">
+              <img src="./img/batch2020.jpg" class="sm:w-4/6 md:w-5/6 mx-auto rounded-md shadow-md">
+              <img src="./img/batch2020cover.jpg" class="sm:w-4/6 md:w-5/6 mx-auto rounded-md shadow-md">
+              <img src="./img/pizza menu.png" class="sm:w-4/6 md:w-5/6 mx-auto rounded-md shadow-md">
+              <img src="./img/ubsgcover1.jpg" class="sm:w-4/6 md:w-4/6 mx-auto md:col-span-3 rounded-md shadow-md">
+              <img src="./img/omen-banner.png" class="sm:w-4/6 md:w-4/6 mx-auto md:col-span-3 rounded-md shadow-md">
             </div>
           </div>
 
@@ -143,29 +159,29 @@
             <div class="float-right w-4 h-1 bg-indigo-500 ml-1 -mt-3"></div>
             <h1 class="bg-indigo-500 text-gray-100 text-xl w-52 uppercase font-bold text-center rounded-md mb-3 mx-auto">Skills</h1>
             <div class="grid grid-flow-row grid-cols-2 md:grid-cols-3 gap-4">
-                <div class="card">
-                <img src="./img/html.png" class="w-6/6 mb-3">
+                <div class="card md:w-5/6">
+                <img src="./img/html.png" class="w-6/6 mb-3 p-3">
                 <h2>HTML</h2>
                 </div>
-                <div class="card">
-                <img src="./img/scss.png" class="w-6/6 mb-3">
+                <div class="card md:w-5/6">
+                <img src="./img/scss.png" class="w-6/6 mb-3 p-3">
                 <h2>CSS/ SCSS/ TailWindCSS</h2>
                 </div>
-                <div class="card">
-                <img src="./img/js.png" class="w-6/6 mb-3">
+                <div class="card md:w-5/6">
+                <img src="./img/js.png" class="w-6/6 mb-3 p-3">
                 <h2>Javascript</h2>
                 </div>
-                <div class="card">
-                <img src="./img/ps.png" class="w-6/6 mb-3">
+                <div class="card md:w-5/6">
+                <img src="./img/ps.png" class="w-6/6 mb-3 p-3">
                 <h2>Photoshop</h2>
                 </div>
-                <div class="card">
-                <img src="./img/illustrator.png" class="w-6/6 rounded-md mb-3">
-                <h2>Illustrator</h2>
+                <div class="card md:w-5/6">
+                <img src="./img/illustrator.png" class="w-6/6 rounded-md mb-3 p-3">
+                <h2 class="pt-2">Illustrator</h2>
                 </div>
-                <div class="card">
-                <img src="./img/affinity.png" class="w-6/6 mb-3">
-                <h2>Affinity Designer</h2>
+                <div class="card md:w-5/6">
+                <img src="./img/affinity.png" class="w-6/6 mb-3 p-3">
+                <h2 class="pt-5">Affinity Designer</h2>
                 </div>
             </div>
             
@@ -175,22 +191,38 @@
               <div class="float-left w-1 h-1 bg-indigo-500"></div><br>
               <div class="float-left w-4 h-1 bg-indigo-500 mr-1 -mt-3"></div>
               <h1 class="bg-indigo-500 text-gray-100 text-xl w-52 uppercase font-bold text-center rounded-md mb-3 mx-auto">Contact Me</h1>
-              <div class="w-5/6 sm:w-4/6 md:w-3/6 mx-auto">
-                <form action="" class="mt-5 mb-5 border border-black py-5 rounded-md shadow-xl text-sm">
-                  <div class="w-5/6 lg:w-4/6 xl:w-3/6 mx-auto">
-                    <label for="name">Name:</label><br>
-                    <input type="text" name="name" id="name" placeholder="Enter Name" class="w-full bg-transparent border-b border-black outline-none px-1 mt-1 mb-3" required><br>
-
-                    <label for="email">E-mail:</label><br>
-                    <input type="email" name="email" id="email" placeholder="youremail@gmail.com" class="w-full bg-transparent border-b border-black outline-none px-1 mt-1 mb-3" required><br>
-                    
-                    <label for="textarea">Message:</label><br>
-                    <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter Message here" class="w-full bg-transparent border border-black outline-none rounded-md p-1 mt-3" required></textarea><br><br>
-                    <div class="w-full text-center">
-                      <button type="submit" class="bg-indigo-500 text-white px-3 py-1 rounded-md hover:bg-indigo-600">Submit</button>
-                    </div>
+              <div class="flex">
+                <div class="hidden lg:block flex-1 w-5/6 mx-auto p-5">
+                  <div class="mx-auto w-4/6 h-1 mt-5 bg-indigo-500"></div>
+                  <h1 class="mt-7 text-center text-xl font-bold uppercase text-indigo-500">Contact Information</h1>
+                  <p class="mt-10 text-lg pr-3">Contact me through my email, kindly fill up the form to send me an email.</p>
+                  <p class="mt-10 text-lg">
+                    <svg class="w-7 h-7 mr-1 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                     rrcunanan29@gmail.com</p>
+                     <div class="mt-5">
+                      <div class="float-right w-10 h-1 bg-indigo-500 ml-1"></div>
+                      <div class="float-right w-2 h-1 bg-indigo-500 ml-1"></div>
+                      <div class="float-right w-1 h-1 bg-indigo-500"></div><br>
+                      <div class="float-right w-4 h-1 bg-indigo-500 ml-1 -mt-3"></div>
                   </div>
-                </form>
+                </div>
+                <div class="w-5/6 sm:w-4/6 md:w-3/6 mx-auto">
+                  <form action="" class="mt-5 mb-5 border border-black py-5 rounded-md shadow-xl text-lg">
+                    <div class="w-5/6 lg:w-5/6 xl:w-5/6 mx-auto">
+                      <label for="name">Name:</label><br>
+                      <input type="text" name="name" id="name" placeholder="Enter Name" class="w-full bg-transparent border-b border-black outline-none px-1 mt-1 mb-3" required><br>
+
+                      <label for="email">E-mail:</label><br>
+                      <input type="email" name="email" id="email" placeholder="youremail@gmail.com" class="w-full bg-transparent border-b border-black outline-none px-1 mt-1 mb-3" required><br>
+                      
+                      <label for="textarea">Message:</label><br>
+                      <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter Message here" class="w-full bg-transparent border border-black outline-none rounded-md p-1 mt-3" required></textarea><br><br>
+                      <div class="w-full text-center">
+                        <button type="submit" class="bg-indigo-500 text-white px-3 py-1 rounded-md hover:bg-indigo-600">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
               <div class="float-right w-10 h-1 bg-indigo-500 ml-1"></div>
               <div class="float-right w-2 h-1 bg-indigo-500 ml-1"></div>
