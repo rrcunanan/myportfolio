@@ -1,9 +1,10 @@
-//declarations
-const btn = document.querySelector('.mobile-menu-button');
-const sidebar = document.querySelector('.sidebar');
+const burger = document.querySelector('#burger');
+const menu = document.querySelector('#menu');
 
-//functions
-
-btn.addEventListener("click", () => {
-  sidebar.classList.toggle("-translate-x-full");
+burger.addEventListener('click', () => {
+    if(menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+    } else {
+        menu.classList.add('hidden');
+    }
 });
