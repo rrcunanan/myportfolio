@@ -31843,6 +31843,69 @@ video {
   text-align: center;
 }
 
+.header-cover {
+  background: url('../public/img/header-cover.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+#status {
+  width: 70%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+#status.success {
+  background: rgb(211, 250, 153);
+  -webkit-animation: status 4s ease forwards;
+          animation: status 4s ease forwards;
+}
+
+#status.error {
+  background: rgb(250, 129, 92);
+  color: #fff;
+  -webkit-animation: status 4s ease forwards;
+          animation: status 4s ease forwards;
+}
+
+@-webkit-keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
