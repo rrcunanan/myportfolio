@@ -4,14 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss build src/styles.css -o public/styles.css"
+    "build": "tailwindcss build src/styles.css -o public/styles.css",
+    "build-1": "NODE_ENV=production tailwindcss build src/styles.css -o public/styles.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.2.5",
-    "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.1.2"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.1.3",
+    "cssnano": "^5.0.6",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1"
   }
 }
