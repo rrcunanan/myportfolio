@@ -1,12 +1,5 @@
 .card {
-  @apply text-center font-bold border-2 border-black rounded-md p-2 shadow-xl;
-}
-
-.header-cover {
-  background: url('../public/img/header-cover.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  @apply text-center font-bold border-2 border-black rounded-md p-2 shadow-xl hover:bg-indigo-300  transition duration-500 ease-in-out ;
 }
 
 #status {
